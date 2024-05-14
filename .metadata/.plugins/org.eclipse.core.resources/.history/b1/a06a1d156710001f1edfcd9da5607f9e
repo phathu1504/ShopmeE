@@ -1,0 +1,33 @@
+package com.shopme.admin.security;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import jakarta.servlet.Filter;
+
+public class WebSecurityConfig extends WebSecurityConfiguration {
+
+	
+
+
+	@Bean
+	public PasswordEncoder PasswordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+
+	@Override
+	public Filter springSecurityFilterChain() throws Exception {
+	    // Tạo một đối tượng FilterChainProxyBuilder
+	    FilterChainProxyBuilder builder = new FilterChainProxyBuilder(http);
+	    
+	    // Cấu hình bảo mật: tất cả các yêu cầu đều được cho phép (permitAll)
+	    builder.addFilter(new YourCustomSecurityFilter(), SecurityFilterChainParser.parse(http, builder));
+	    
+	    // Trả về FilterChainProxy
+	    return builder.build();
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.shopme.admin.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.shopme.admin.service.UserService;
+import com.shopme.common.entity.User;
+
+@Controller
+@RequestMapping("users")
+public class UserController {
+	
+	private UserService service;
+	
+	@Autowired
+	public UserController(UserService service) {
+		this.service = service;
+	}
+	
+	@GetMapping({"", "/"})
+	public String listAll(Model model) {
+		List<User> listUsers = this.service.listAll();
+		
+		model.addAttribute("listUsers", listUsers);
+		
+		return "User/users";
+	}
+	
+	@GetMapping("/new")
+	public String newUser() {
+		return "user_form_create";
+	}
+}

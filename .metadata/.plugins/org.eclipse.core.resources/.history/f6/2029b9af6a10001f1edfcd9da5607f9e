@@ -1,0 +1,42 @@
+package com.shopme.admin.security;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig {
+
+	@Bean
+	public PasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+	
+	@Bean
+    // SecurityFilterChain
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        // HttpSecurity:
+        http
+                .authorizeHttpRequests( // Bat dau cac quy tat phan quyen
+                        configurar -> configurar // Su dung cu phap lamda de truy cap cac method co san trong doi tuong authorizeHttpRequests
+                                // Quy tat phan quyen
+                                // Cho phep yeu cau Get den URL "api/students" chi voi nhung nguoi dung co vai tro teacher manager admin
+                                .requestMatchers(HttpMethod.GET, "api/students").hasAnyRole("TEACHER", "MANAGER", "ADMIN")
+                                .requestMatchers(HttpMethod.GET, "api/students/**").hasAnyRole("TEACHER", "MANAGER", "ADMIN")
+                                .requestMatchers(HttpMethod.POST, "api/students").hasAnyRole("MANAGER", "ADMIN")
+                                .requestMatchers(HttpMethod.PUT, "api/students").hasAnyRole("MANAGER", "ADMIN")
+                                .requestMatchers(HttpMethod.DELETE, "api/students/**").hasAnyRole("ADMIN")
+                ); // Bat dau dinh nghia cac quy tat phan quyen cho cac HTTP yeu cau den
+
+        http.httpBasic(Customizer.withDefaults());
+
+        http.csrf(csrf -> csrf.disable());
+        // csrf -> cross site request forgery (tim hieu no)
+
+        return http.build(); // hoan thien cau hinh
+    }
+
+}

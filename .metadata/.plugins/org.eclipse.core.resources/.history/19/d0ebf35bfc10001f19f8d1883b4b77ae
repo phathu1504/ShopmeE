@@ -1,0 +1,5 @@
+package com.shopme.admin.restcontroller;
+
+public class UserRestController {
+
+}

@@ -1,0 +1,8 @@
+package com.shopme.admin.entity;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
+@Repository
+public class UserRepository{
+
+}
