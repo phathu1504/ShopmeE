@@ -14,7 +14,10 @@ import com.shopme.admin.user.UserRepository;
 import com.shopme.common.entity.Role;
 import com.shopme.common.entity.User;
 
+import jakarta.transaction.Transactional;
+
 @Service
+@Transactional
 public class UserService {
 
 	private UserRepository userRepo;
@@ -48,7 +51,7 @@ public class UserService {
 
 	public boolean isEmailUnique(String email) {
 		User userByEmail = userRepo.getUserByEmail(email);
-		
+
 		return userByEmail == null;
 	}
 
@@ -59,5 +62,18 @@ public class UserService {
 			throw new UserNotFoundException("Could not find any user with ID: " + id);
 		}
 
+	}
+
+	public void delete(Integer id) throws UserNotFoundException {
+		Long countById = userRepo.countById(id);
+		if (countById == null || countById == 0) {
+			throw new UserNotFoundException("Count not find any user with ID: " + id);
+		}
+
+		userRepo.deleteById(id);
+	}
+
+	public void updateUserEnabledStatus(Integer id, boolean enabled) {
+		userRepo.updateEnableStatus(id, enabled);
 	}
 }

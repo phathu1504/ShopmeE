@@ -2506,3 +2506,179 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2024-05-14 20:13:31,588 [Worker-6: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
 2024-05-14 20:13:31,665 [Worker-6: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
 2024-05-14 20:13:31,743 [Worker-6: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 08:19:33,179 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-15 08:19:54,272 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 08:19:54,293 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 08:19:54,297 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeCommon\src\test\resources
+2024-05-15 08:19:55,692 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-05-15 08:19:55,732 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier  to /ShopmeCommon/target/classes
+2024-05-15 08:19:55,747 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-05-15 08:19:55,789 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier  to /ShopmeCommon/target/classes
+2024-05-15 08:19:55,899 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 08:19:55,912 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 08:19:55,933 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 08:19:56,458 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 08:19:56,604 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 08:19:56,730 [Worker-12: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 08:19:57,154 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-05-15 08:19:57,231 [Worker-13: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier  to /ShopmeCommon/target/classes
+2024-05-15 08:19:58,374 [Worker-10: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 08:19:58,456 [Worker-10: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 08:19:58,558 [Worker-10: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 13:54:24,098 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-15 13:58:25,190 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-05-15 13:58:25,243 [Worker-1: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier  to /ShopmeCommon/target/classes
+2024-05-15 13:58:25,259 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-05-15 13:58:25,295 [Worker-1: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier  to /ShopmeCommon/target/classes
+2024-05-15 13:58:25,510 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 13:58:25,571 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 13:58:25,589 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 13:58:26,453 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-05-15 13:58:26,490 [Worker-1: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier  to /ShopmeCommon/target/classes
+2024-05-15 14:01:21,040 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:01:21,043 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:01:21,048 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:01:27,577 [Worker-15: Launching UserRepositoryTest.testCountById] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:01:27,710 [Worker-15: Launching UserRepositoryTest.testCountById] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:01:27,810 [Worker-15: Launching UserRepositoryTest.testCountById] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:02:25,549 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:02:25,549 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:02:25,558 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:02:33,221 [Worker-4: Launching UserRepositoryTest.testCountById] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:02:33,325 [Worker-4: Launching UserRepositoryTest.testCountById] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:02:33,479 [Worker-4: Launching UserRepositoryTest.testCountById] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:05:07,094 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:05:07,102 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 14:05:07,109 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:06:29,147 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:06:29,149 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:06:29,153 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:06:36,048 [Worker-17: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:06:36,135 [Worker-17: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:06:36,212 [Worker-17: Launching ShopmeBackEnd - ShopmeBackEndApplication (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 14:07:13,881 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:07:13,883 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:07:13,885 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:13:25,731 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:13:25,735 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 14:13:25,740 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:17:36,667 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:17:36,673 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 14:17:36,678 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:17:53,036 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:17:53,045 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 14:17:53,050 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:18:06,566 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:18:06,570 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 14:18:06,576 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:21:36,823 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:21:36,824 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:21:36,828 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:22:10,649 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:22:10,651 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:22:10,654 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:23:30,361 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:23:30,363 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:23:30,365 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:25:22,269 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:25:22,273 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:25:22,278 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:26:16,501 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:26:16,503 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:26:16,506 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:29:45,800 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:29:45,801 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:29:45,805 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:29:47,936 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:29:47,938 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:29:47,941 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:29:50,695 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:29:50,697 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:29:50,701 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:38:53,149 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:38:53,151 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:38:53,154 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:43:26,633 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:43:26,635 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:43:26,637 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:45:20,600 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:45:20,602 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:45:20,605 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:45:40,397 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:45:40,398 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:45:40,400 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:46:46,591 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:46:46,593 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:46:46,596 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:47:14,289 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:47:14,291 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:47:14,295 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:48:53,161 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:48:53,166 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:48:53,166 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:51:29,244 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:51:29,247 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:51:29,252 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:52:06,138 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:52:06,139 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:52:06,143 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:52:16,518 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:52:16,519 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:52:16,523 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:53:14,115 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 14:53:14,117 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:53:14,121 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 14:57:10,533 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 14:57:10,558 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 14:57:10,566 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:03:53,725 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:03:53,737 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:03:53,746 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:04:16,901 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:04:16,907 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:04:16,913 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:05:12,982 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:05:12,991 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:05:12,999 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:07:08,251 [Worker-37: Launching UserRepositoryTest.testDisableUser] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 15:07:08,357 [Worker-37: Launching UserRepositoryTest.testDisableUser] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 15:07:08,359 [Worker-37: Launching UserRepositoryTest.testDisableUser] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 15:07:08,363 [Worker-37: Launching UserRepositoryTest.testDisableUser] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:07:08,512 [Worker-37: Launching UserRepositoryTest.testDisableUser] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 15:07:08,621 [Worker-37: Launching UserRepositoryTest.testDisableUser] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 15:08:49,844 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 15:08:49,846 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:08:49,850 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:09:28,700 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 15:09:28,702 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 15:09:28,705 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:09:33,252 [Worker-42: Launching UserRepositoryTest.testEnableUser] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 15:09:33,359 [Worker-42: Launching UserRepositoryTest.testEnableUser] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 15:09:33,449 [Worker-42: Launching UserRepositoryTest.testEnableUser] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2024-05-15 15:11:03,502 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:11:03,506 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:11:03,511 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:12:59,879 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 15:12:59,881 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:12:59,884 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:13:48,668 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 15:13:48,670 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:13:48,673 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:14:49,194 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 15:14:49,195 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:14:49,199 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:17:48,676 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:17:48,683 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:17:48,688 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:19:46,712 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:19:46,718 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:19:46,723 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:21:13,654 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:21:13,686 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:21:13,690 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:21:43,398 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:21:43,402 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:21:43,406 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-05-15 15:22:05,109 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 15:22:05,115 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-05-15 15:22:05,121 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Project\SpringBoot_Project\ShopmeE\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources

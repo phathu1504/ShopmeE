@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserRepositoryTest.testCountById" project="ShopmeBackEnd" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.shopme.admin.user.UserRepositoryTest" time="0.703" displayname="UserRepositoryTest" uniqueid="[engine:junit-jupiter]/[class:com.shopme.admin.user.UserRepositoryTest]">
+    <testcase name="testCountById" classname="com.shopme.admin.user.UserRepositoryTest" time="0.703" displayname="testCountById()" uniqueid="[engine:junit-jupiter]/[class:com.shopme.admin.user.UserRepositoryTest]/[method:testCountById()]">
+      <failure>java.lang.AssertionError: &#13;
+Expecting actual:&#13;
+  0L&#13;
+to be greater than:&#13;
+  0L&#13;
+&#13;
+	at com.shopme.admin.user.UserRepositoryTest.testCountById(UserRepositoryTest.java:112)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>
