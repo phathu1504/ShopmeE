@@ -40,8 +40,21 @@ public class UserService {
 	}
 
 	public void save(User user) {
-		encodePassword(user);
-		userRepo.save(user);
+	    boolean isUpdatingUser = (user.getId() != null);
+	    
+	    if (isUpdatingUser) {
+	        User existingUser = userRepo.findById(user.getId()).get();
+	        
+	        if (user.getPassword().isEmpty()) {
+	            user.setPassword(existingUser.getPassword());
+	        } else {
+	            encodePassword(user);
+	        }
+	    } else {
+	        encodePassword(user);
+	    }
+	    
+	    userRepo.save(user);
 	}
 
 	private void encodePassword(User user) {
@@ -49,11 +62,20 @@ public class UserService {
 		user.setPassword(encodedPassword);
 	}
 
-	public boolean isEmailUnique(String email) {
-		User userByEmail = userRepo.getUserByEmail(email);
-
-		return userByEmail == null;
+	public boolean isEmailUnique(Integer id, String email) {
+	    User userByEmail = userRepo.getUserByEmail(email);
+	    
+	    if (userByEmail == null) return true;
+	    
+	    boolean isCreatingNew = (id == null);
+	    
+	    if (isCreatingNew) {
+	        return false;
+	    } else {
+	        return userByEmail.getId().equals(id);
+	    }
 	}
+
 
 	public User get(Integer id) throws UserNotFoundException {
 		try {

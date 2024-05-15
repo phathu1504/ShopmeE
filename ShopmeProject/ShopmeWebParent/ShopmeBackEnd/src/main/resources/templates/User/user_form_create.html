@@ -138,23 +138,18 @@
 
     
 	function checkEmailUnique(form) {
-	    url = "[[@{/users/check_email}]]"; // Đây là cú pháp Thymeleaf để lấy URL
+	    var url = "[[@{/users/check_email}]]"; 
+	    var userEmail = $("input[name='email']").val(); 
+	    var userId = $("input[name='id']").val(); 
+	    var csrfValue = $("input[name='_csrf']").val();
 	    
-	    // Lấy giá trị email từ form
-	    userEmail = $("#email").val();
-	    
-	    // Lấy giá trị CSRF token
-	    csrfValue = $("input[name='_csrf']").val();
-	    
-	    // Xây dựng đối tượng tham số
-	    var params = {email: userEmail, _csrf: csrfValue};
+	    var params = {id: userId, email: userEmail, _csrf: csrfValue};
 
-	    // Thực hiện yêu cầu POST
 	    $.post(url, params, function(response) {
-	        if(response == "Ok"){
+	        if(response == "OK"){
 	            form.submit();
 	        } else if(response == "Duplicated"){
-	            alert('Có người dùng khác đang sử dụng email này: '+userEmail)
+	            alert('Có người dùng khác đang sử dụng email này: ' + userEmail);
 	        }
 	    });
 
