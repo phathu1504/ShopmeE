@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.shopme.admin.exception.UserNotFoundException;
+import com.shopme.admin.handler.UserNotFoundException;
 import com.shopme.admin.user.RoleReponsitory;
 import com.shopme.admin.user.UserRepository;
 import com.shopme.common.entity.Role;
@@ -39,7 +39,7 @@ public class UserService {
 		return (List<Role>) roleRepo.findAll();
 	}
 
-	public void save(User user) {
+	public User save(User user) {
 	    boolean isUpdatingUser = (user.getId() != null);
 	    
 	    if (isUpdatingUser) {
@@ -54,7 +54,7 @@ public class UserService {
 	        encodePassword(user);
 	    }
 	    
-	    userRepo.save(user);
+	    return userRepo.save(user);
 	}
 
 	private void encodePassword(User user) {

@@ -1,0 +1,5 @@
+package com.shopme.admin.utils;
+
+public class FileUploadUtil {
+
+}
