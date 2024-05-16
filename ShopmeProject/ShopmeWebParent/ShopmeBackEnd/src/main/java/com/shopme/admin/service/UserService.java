@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -19,6 +22,8 @@ import jakarta.transaction.Transactional;
 @Service
 @Transactional
 public class UserService {
+
+	public static final int User_Per_Page = 10;
 
 	private UserRepository userRepo;
 	private RoleReponsitory roleRepo;
@@ -39,22 +44,27 @@ public class UserService {
 		return (List<Role>) roleRepo.findAll();
 	}
 
+	public Page<User> listByPage(int pageNum) {
+		Pageable pageable = PageRequest.of(pageNum - 1, User_Per_Page);
+		return userRepo.findAll(pageable);
+	}
+
 	public User save(User user) {
-	    boolean isUpdatingUser = (user.getId() != null);
-	    
-	    if (isUpdatingUser) {
-	        User existingUser = userRepo.findById(user.getId()).get();
-	        
-	        if (user.getPassword().isEmpty()) {
-	            user.setPassword(existingUser.getPassword());
-	        } else {
-	            encodePassword(user);
-	        }
-	    } else {
-	        encodePassword(user);
-	    }
-	    
-	    return userRepo.save(user);
+		boolean isUpdatingUser = (user.getId() != null);
+
+		if (isUpdatingUser) {
+			User existingUser = userRepo.findById(user.getId()).get();
+
+			if (user.getPassword().isEmpty()) {
+				user.setPassword(existingUser.getPassword());
+			} else {
+				encodePassword(user);
+			}
+		} else {
+			encodePassword(user);
+		}
+
+		return userRepo.save(user);
 	}
 
 	private void encodePassword(User user) {
@@ -63,19 +73,19 @@ public class UserService {
 	}
 
 	public boolean isEmailUnique(Integer id, String email) {
-	    User userByEmail = userRepo.getUserByEmail(email);
-	    
-	    if (userByEmail == null) return true;
-	    
-	    boolean isCreatingNew = (id == null);
-	    
-	    if (isCreatingNew) {
-	        return false;
-	    } else {
-	        return userByEmail.getId().equals(id);
-	    }
-	}
+		User userByEmail = userRepo.getUserByEmail(email);
 
+		if (userByEmail == null)
+			return true;
+
+		boolean isCreatingNew = (id == null);
+
+		if (isCreatingNew) {
+			return false;
+		} else {
+			return userByEmail.getId().equals(id);
+		}
+	}
 
 	public User get(Integer id) throws UserNotFoundException {
 		try {
