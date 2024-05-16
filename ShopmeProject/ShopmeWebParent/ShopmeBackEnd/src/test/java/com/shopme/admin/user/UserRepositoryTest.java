@@ -108,38 +108,54 @@ class UserRepositoryTest {
 
 		assertThat(user).isNotNull();
 	}
-	
+
 	@Test
 	public void testCountById() {
 		Integer id = 1;
 		Long countById = repo.countById(id);
-		
+
 		assertThat(countById).isNotNull().isGreaterThan(0);
 	}
-	
+
 	@Test
 	public void testDisableUser() {
 		Integer id = 1;
 		repo.updateEnableStatus(id, false);
 	}
-	
+
 	@Test
 	public void testEnableUser() {
 		Integer id = 1;
 		repo.updateEnableStatus(id, true);
 	}
-	
+
 	@Test
 	public void testListFirstPage() {
 		int pageNumber = 0;
 		int pageSize = 4;
 		Pageable pageable = PageRequest.of(pageNumber, pageSize);
 		Page<User> page = repo.findAll(pageable);
-		
+
 		List<User> listUser = page.getContent();
-		
+
 		listUser.forEach(user -> System.out.println(user));
-		
+
 		assertThat(listUser.size()).isEqualTo(pageSize);
+	}
+
+	@Test
+	public void testSaearchUsers() {
+		String keyword = "bruce";
+
+		int pageNumber = 0;
+		int pageSize = 4;
+		Pageable pageable = PageRequest.of(pageNumber, pageSize);
+		Page<User> page = repo.findAll(keyword, pageable);
+
+		List<User> listUser = page.getContent();
+
+		listUser.forEach(user -> System.out.println(user));
+
+		assertThat(listUser.size()).isGreaterThan(0);
 	}
 }
