@@ -5,6 +5,7 @@ import java.util.Set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -14,14 +15,23 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
 
+// Đánh dấu lớp này là 1 entity JPA
 @Entity
+// Chỉ định bảng trong csdl là "users"
 @Table(name = "users")
 public class User {
 
+	// Đánh dấu thuộc tính id là khóa chính
 	@Id
+	// Sử dụng chiến lược tự động tăng
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
+	// Định nghĩa các thuộc tính của côt trong bảng
+	// name: Tên của cột trong csdl
+	// lenght : Chiều dài tối đa của cột
+	// nullable: xác định cột này có chứa giá trị null hay không
+	// unique: Xác định cột này có giá trị duy nhất không
 	@Column(length = 128, nullable = false, unique = true)
 	private String email;
 
@@ -39,7 +49,9 @@ public class User {
 
 	private boolean enabled;
 
-	@ManyToMany
+	// @ManyToMany thiết lập mối quan hệ nhiều-nhiều
+	@ManyToMany(fetch = FetchType.EAGER)
+	// @JoinTable Định nghĩa bản trung gian "users_roles" để lưu các liên kết giữa users và roles
 	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private Set<Role> roles = new HashSet<>();
 
