@@ -15,38 +15,36 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class WebSecurityConfig {
 
-    @Bean
-     UserDetailsService userDetailsService() {
-        return new ShopmeUserDetailsService();
-    }
+	@Bean
+	UserDetailsService userDetailsService() {
+		return new ShopmeUserDetailsService();
+	}
 
-    @Bean
-    PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+	@Bean
+	PasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
 
-    public DaoAuthenticationProvider authenticationProvider() {
-        DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
-        authProvider.setUserDetailsService(this.userDetailsService());
-        authProvider.setPasswordEncoder(this.passwordEncoder());
+	public DaoAuthenticationProvider authenticationProvider() {
+		DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
+		authProvider.setUserDetailsService(this.userDetailsService());
+		authProvider.setPasswordEncoder(this.passwordEncoder());
 
-        return authProvider;
-    }
+		return authProvider;
+	}
 
-    @Bean
-     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
-            .formLogin(form -> form
-                .loginPage("/login")
-                .usernameParameter("email")
-                .permitAll())
-            .logout(logout -> logout.permitAll());
+	@Bean
+	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+		http.authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
+				.formLogin(form -> form.loginPage("/login").usernameParameter("email").permitAll())
+				.logout(logout -> logout.permitAll())
+				.rememberMe(rem -> rem.key("AbcDefgHijKlmnOpqrs_1234567890").tokenValiditySeconds(7 * 24 * 60 * 60));
 
-        return http.build();
-    }
+		return http.build();
+	}
 
-    @Bean
-    WebSecurityCustomizer configureWebSecurity() throws Exception {
-        return (web) -> web.ignoring().requestMatchers("/images/**", "/fontawesome/**", "/js/**", "/webjars/**");
-    }
+	@Bean
+	WebSecurityCustomizer configureWebSecurity() throws Exception {
+		return (web) -> web.ignoring().requestMatchers("/images/**", "/fontawesome/**", "/js/**", "/webjars/**");
+	}
 }

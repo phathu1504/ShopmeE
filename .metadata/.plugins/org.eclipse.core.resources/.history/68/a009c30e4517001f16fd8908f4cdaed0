@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/fragment :: page_head('Your Account Details')" />
+<body>
+	<div class="container-fluid">
+
+		<div th:replace="fragments/navigation :: menu"></div>
+		
+		<div>
+		
+			<form th:action="@{/account/update}" method="post" style="max-width:700px; margin: 0 auto" th:object="${user}"
+				onsubmit="return checkEmailUnique(this);" enctype="multipart/form-data">
+				<div class="text-center">
+					<h2>Your Account Details</h2>
+				</div>	
+				<input type="hidden" th:field="*{id}">
+				<div class="border border-secondary rounded p-3">
+					<div class="form-group row mt-2">
+						<label class="col-sm-4 col-form-label">Email:</label>
+						<div class="col-sm-8">
+							<input type="email" class="form-control" th:field="*{email}" readonly="readonly">
+						</div>
+					</div>
+					
+					<div class="form-group row mt-2">
+						<label class="col-sm-4 col-form-label">First Name:</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" th:field="*{firstName}" required minlength="2" maxlength="50">
+						</div>
+					</div>
+					
+					<div class="form-group row mt-2">
+						<label class="col-sm-4 col-form-label">Last Name:</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" th:field="*{lastName}" required minlength="2" maxlength="100">
+						</div>
+					</div>
+					
+					<div class="form-group row mt-2">
+						<label class="col-sm-4 col-form-label">Password:</label>
+						<div class="col-sm-8">
+							<input type="password" th:field="*{password}" class="form-control"
+							 placeholder="Leave blank if you don't want to change password" 
+							 minlength="0" maxleangth="20" 
+							 oninput="checkPasswordMatch(document.getElementById('confirmPassword'))">
+						</div>
+					</div>
+					
+					<div class="form-group row mt-2">
+						<label class="col-sm-4 col-form-label">Confirm Password:</label>
+						<div class="col-sm-8">
+							<input type="password" id="confirmPassword" class="form-control"
+								minlength="0" maxleangth="20" 
+								oninput="checkPasswordMatch(this)"/>
+						</div>
+					</div>
+					
+					<div class="form-group row mt-2">
+						<label class="col-sm-4 col-form-label">Assigned Roles:</label>
+						<div class="col-sm-8">
+							<span><b>[[${user.roles}]]</b></span>
+						</div>
+					</div>
+					
+					<div class="form-group row mt-2">
+						<label class="col-sm-4 col-form-label">Photo:</label>
+						<div class="col-sm-8">
+							<input type="hidden" th:field="*{photos}">
+							<input type="file" id="fileImage" name="image" accept="image/png, image/jpeg"
+								class="mb-2" >
+							<img id="thumbnail" alt="Photo Preview" th:src="@{${user.photosImagePath}}"
+								class="img-fluid" >
+						</div>
+					</div>
+					
+					<div class="text-center">
+						<input type="submit" value="Save" class="btn btn-primary m-3">
+						<input type="button" value="Cancel" class="btn btn-secondary" id="buttonCancel">
+					</div>
+				</div>
+			</form>
+			
+		</div>
+
+		<div th:replace="fragments/fragment :: footer"></div>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $("#buttonCancel").on("click", function() {
+	        window.location = "/ShopmeAdmin/users"; // Điều hướng đến trang "Users"
+	    });
+	    
+	    $("#fileImage").change(function(){
+	    	fileSize = this.files[0].size;
+	    	
+	    	if(fileSize > 1048576) {
+	    		this.setCustomValidity("You must choose an image less than 1MB!");
+	    		this.reportValidity();
+	    	} else {
+	    		this.setCustomValidity("");
+	    		showImageThumbnail(this);
+	    	}
+
+	    })
+	});
+	
+	function checkPasswordMatch(confirmPassword) {
+		if(confirmPassword.value != $("confirmPassword")){
+			confirmPassword.setCustomValidty("Password do not match");
+		} else {
+			confirmPassword.setCustomValidty("");
+		}
+	}
+	
+	function showImageThumbnail(fileInput){
+		var file = fileInput.files[0];
+		var reader = new FileReader();
+		reader.onload = function(e){
+			$("#thumbnail").attr("src", e.target.result);
+		}
+		reader.readAsDataURL(file);
+	}
+
+    
+	function checkEmailUnique(form) {
+	    var url = "[[@{/users/check_email}]]"; 
+	    var userEmail = $("input[name='email']").val(); 
+	    var userId = $("input[name='id']").val(); 
+	    var csrfValue = $("input[name='_csrf']").val();
+	    
+	    var params = {id: userId, email: userEmail, _csrf: csrfValue};
+
+	    $.post(url, params, function(response) {
+	        if(response == "OK"){
+	            form.submit();
+	        } else if(response == "Duplicated"){
+	            alert('Có người dùng khác đang sử dụng email này: ' + userEmail);
+	        }
+	    });
+
+	    return false;
+	}
+	
+	$(document).ready(function (){
+		$("#logoutLink").on("click", function(e) {
+			e.preventDefault();
+			document.logoutForm.submit();
+		});
+	});
+
+</script>
+</body>
+</html>
