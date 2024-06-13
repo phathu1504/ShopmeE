@@ -42,18 +42,12 @@ public class UserController {
 
 	@GetMapping({ "", "/" })
 	public String listFirstPage(Model model) {
-//		List<User> listUsers = this.service.listAll();
-//		model.addAttribute("listUsers", listUsers);
-//		return "User/users";
-
 		return listByPage(1, model, "id", "asc", null);
 	}
 
 	@GetMapping("/page/{pageNum}")
 	public String listByPage(@PathVariable(name = "pageNum") int pageNum, Model model,
 			@Param("sortField") String sortField, @Param("sortDir") String sortDir, @Param("keyword") String keyword) {
-		System.out.println("sort field: " + sortField);
-		System.out.println("sort dir: " + sortDir);
 		Page<User> page = service.listByPage(pageNum, sortField, sortDir, keyword);
 		List<User> listUsers = page.getContent();
 
